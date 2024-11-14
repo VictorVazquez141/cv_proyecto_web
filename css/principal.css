@@ -75,26 +75,43 @@ a{
     color: inherit;
 }
 
-.div-skills{
+main{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.div-skills{
+    display: grid;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-items: start;
+    justify-content: start;
+}
+.div-skills :hover{
+    box-shadow:  1px 1px 14px 5px #0051f2;
+    transition: background-color 1s, transform 1s;
 }
 .skills-button{
-    background-color: #000000; /* Color de fondo */
-    color: rgb(255, 255, 255); /* Color del texto */
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
     padding: 10px 30px;
-    border: none;
+    border: revert;
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-article{
+.div-img-skills{
     background-color: rgba(1, 52, 255, 0.435);
     margin: 40px 40px;
     display: flex;
     align-content: stretch;
     justify-content: center;
+    
+}
+
+.sobremi-img{
+    transition: background-color 1s, transform 1s;
 }
