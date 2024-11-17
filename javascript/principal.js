@@ -1,12 +1,12 @@
 // funcionamiento de botones 
-document.getElementById("btn-sobremi").addEventListener("click", function(){
+document.getElementById("btn-skills").addEventListener("click", function(){
     // Mostrar imagen
-    let imagen = document.getElementById("sobremi")
+    let imagen = document.getElementById("img-sobremi")
 
     // Alternar la visibilidad de la imagen
-    if (imagen.style.display === "none") {
-        imagen.style.display = "block";
-    } else {
+    if (imagen.style.display === "block") {
         imagen.style.display = "none";
+    } else {
+        imagen.style.display = "block";
     }
 })
